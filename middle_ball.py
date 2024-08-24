@@ -17,8 +17,8 @@ middle_ball1 = dict(middle_ball1) # создаём из списка слова�
 print(middle_ball1)
 
 # третий способ
-for i in range(len(grades)): # перебераем елементы списка grades
-    grades[i] = sum(grades[i])/len(grades[i]) # присваиваем елементу новое значение
+for i in range(len(grades)): # перебираем элементы списка grades
+    grades[i] = sum(grades[i])/len(grades[i]) # присваиваем элементу новое значение
 middle_ball2 = dict(zip(students,grades)) # упаковываем словарь из двух списков
 print(middle_ball2)
 
