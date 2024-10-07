@@ -5,8 +5,6 @@ class Animal:
         self.fed = False  # накормленный
         self.name = name  # название животного
 
-
-class Mammal(Animal):
     def eat(self, food):
         self.food = Plant(self.name)
         if food.edible == True:
@@ -15,18 +13,15 @@ class Mammal(Animal):
         else:
             print(f'{self.name} не стал есть {food.name}')
             self.alive = False
+
+
+class Mammal(Animal):
+    pass
 
 
 class Predator(Animal):
-    def eat(self, food):
-        self.food = Plant(self.name)
-        if food.edible == True:
-            print(f'{self.name} съел {food.name}')
-            self.fed = True
-        else:
-            print(f'{self.name} не стал есть {food.name}')
-            self.alive = False
-
+    pass
+    
 
 class Plant:
     edible = False  # съедобность
